@@ -1,3 +1,587 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/*  Navigation and Logo  */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-evenly;
+}
+
+.nav-items {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: gray;
+}
+
+/*   Header  */
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*   About Features Section */
+
+.about-features {
+  width: 87%;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+.features,
+.about,
+h2 p {
+  margin-top: 40px;
+  width: 50%;
+}
+
+/* Image Divider */
+
+.image-splitter {
+  text-align: center;
+  margin: 0 auto 60px auto;
+}
+
+.image-splitter img {
+  width: 87%;
+}
+
+/*   Other Info Section   */
+
+.other-info {
+  display: flex;
+  width: 87%;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+.info-one,
+.info-two,
+.info-three {
+  width: 30%;
+}
+
+/*   Contact Section    */
+
+.contact {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto;
+  font-size: 1.5em;
+}
+
+.contact address {
+  font-size: 0.75em;
+}
+
+/*    Footer    */
+
+footer {
+  text-align: center;
+  margin: 100px auto;
+}
+
+/*   Services Styles Begin Here    */
+
+.services {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 50px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 50px;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+/*   Card Styles    */
+
+.service-wrapper {
+  display: flex;
+  width: 87%;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  line-height: 1.3;
+  justify-content: space-between;
+}
+
+.service-card {
+  border: 1px solid#000;
+  background: lightgray;
+  width: 40%;
+  padding: 30px;
+  margin: 10px;
+}
+
+.service-btn {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.85em;
+  color: #000;
+  margin-top: 20px;
+}
+
+.service-card a {
+  text-decoration: none;
+}
+
+/*    Bottom Section    */
+
+.bottom-facts {
+  display: flex;
+  width: 87%;
+  margin: 30px auto;
+  border-top: 1px solid #000;
+  padding-top: 60px;
+  justify-content: space-between;
+}
+
+.bottom-facts img {
+  width: 40%;
+  margin: auto;
+}
+
+.list-section {
+  width: 50%;
+  font-size: 1.3em;
+  line-height: 1.8;
+}
+
+.list-section p {
+  padding-bottom: 50px;
+}
+
+ul {
+  margin-left: 25px;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+/*    Contact Page Styles   */
+
+.contact-image img {
+  height: 250px;
+  margin: auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.contact-address {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 40px auto;
+  border: 1px solid grey;
+}
+
+input {
+  margin: 20px;
+  padding: 20px 0;
+  font-size: 1.3em;
+}
+
+.submit-button {
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: darkgray;
+}
+
+/*    Media Queries    */
+
+@media only screen and (max-width: 800px) {
+  body p {
+    font-size: 0.7em;
+  }
+
+  .nav-logo {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-bottom: 15px;
+  }
+
+  .nav-items {
+    width: 100%;
+  }
+
+  .nav-items a {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .about-features {
+    border-top: 2px solid #000;
+  }
+
+  /*  ----    Services Page    -------- */
+
+  .service-card {
+    width: 95%;
+    margin: 2% auto;
+  }
+
+  img.services-info-img {
+    margin-top: 0;
+    height: 300px;
+    width: 350px;
+  }
+
+  .tablet-wrapper p {
+    padding-bottom: 2%;
+    padding-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /*    Home Page Mobile   */
+
+  body p {
+    font-size: 0.7em;
+  }
+
+  .nav-logo {
+    flex-direction: column-reverse;
+    margin-top: 160px;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-bottom: 15px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    border-top: 1px solid #000;
+    width: 100%;
+  }
+
+  .nav-items a {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero {
+    margin: 225px auto 0;
+    width: 95%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 50px;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+
+  .about-features {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    border: none;
+    margin-top: 0;
+  }
+
+  .features,
+  .about {
+    width: 90%;
+  }
+
+  .other-info {
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+  }
+
+  .info-one,
+  .info-two,
+  .info-three {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+
+  /*  ---- Services Page  ----------- */
+
+  .image-splitter {
+    margin-top: 35%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .bottom-facts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bottom-facts img {
+    width: 95%;
+    margin-bottom: 3%;
+  }
+
+  .list-section {
+    width: 95%;
+  }
+
+  .list-section h3 {
+    text-align: center;
+  }
+
+  .tablet-wrapper {
+    display: flex;
+    width: 95%;
+    margin: 5% auto 0;
+    justify-content: space-between;
+  }
+
+  .tablet-wrapper p {
+    width: 50%;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li {
+    margin-bottom: 15%;
+  }
+
+  footer {
+    margin-top: 1%;
+  }
+}
