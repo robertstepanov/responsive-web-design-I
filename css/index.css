@@ -292,6 +292,15 @@ footer {
   line-height: 1.2;
 }
 
+.features p,
+h2 {
+  padding-right: 3%;
+}
+
+.about p {
+  padding-left: 3%;
+}
+
 /*   Card Styles    */
 
 .service-wrapper {
@@ -439,6 +448,15 @@ input {
     border-top: 2px solid #000;
   }
 
+  .features p {
+    padding-right: 3%;
+  }
+
+  .about p,
+  h2 {
+    padding-left: 3%;
+  }
+
   /*  ----    Services Page    -------- */
 
   .service-card {
@@ -456,6 +474,10 @@ input {
     padding-bottom: 2%;
     padding-right: 4%;
   }
+
+  .contact {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -467,7 +489,7 @@ input {
 
   .nav-logo {
     flex-direction: column-reverse;
-    margin-top: 160px;
+    margin-top: 35%;
     justify-content: center;
   }
 
@@ -507,7 +529,6 @@ input {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-bottom: 40px;
     border: none;
     margin-top: 0;
   }
@@ -515,6 +536,10 @@ input {
   .features,
   .about {
     width: 90%;
+  }
+
+  .image-splitter img {
+    margin-top: -100%;
   }
 
   .other-info {
