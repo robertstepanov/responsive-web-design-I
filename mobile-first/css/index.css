@@ -1,0 +1,362 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/*  Navigation and Logo  */
+
+/*    Media Queries    */
+
+@media only screen and (min-width: 500px) {
+  /*    Home Page Mobile   */
+
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .nav-logo {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .nav-items {
+    display: flex;
+    margin-top: 2%;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .nav-items a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin: 8% auto;
+    font-size: 1.4em;
+    text-align: center;
+    width: 95%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 50px;
+  }
+
+  .button {
+    margin-top: 20%;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8em;
+    border: 1px solid #000;
+    border-radius: 7px;
+    padding: 2px 35px;
+  }
+
+  .about-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto 4%;
+    border: none;
+  }
+
+  .features,
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-size: 1.3em;
+    line-height: 1.4;
+  }
+
+  .features {
+    margin-bottom: 5%;
+  }
+
+  .other-info {
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .info-one,
+  .info-two,
+  .info-three {
+    width: 90%;
+    margin: 0 auto 10%;
+    font-size: 1.3em;
+    line-height: 1.4;
+  }
+
+  .image-splitter img {
+    margin: 5%;
+    width: 90%;
+    height: 200px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9% auto;
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 9% auto;
+  }
+
+  /* -------  Service Page Mobile   ------------ */
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 4%;
+    font-size: 1.4em;
+    line-height: 1.4;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4%;
+  }
+
+  .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 8%;
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+
+  .service-card {
+    margin-bottom: 8%;
+  }
+
+  .service-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-card a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .service-btn {
+    border: 1px solid #000;
+    width: 30%;
+    padding: 1% 5%;
+    margin: 5% auto 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .bottom-facts {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.2;
+  }
+
+  .bottom-facts img {
+    margin-bottom: 5%;
+  }
+
+  .tablet-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7% auto;
+  }
+
+  .tablet-wrapper p {
+    width: 50%;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li {
+    margin-bottom: 15%;
+  }
+}
